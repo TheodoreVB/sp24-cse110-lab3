@@ -12,16 +12,14 @@
     </header>
     <section>
         <h4>Attendance:</h4>
-        <p>
             <ul>
                 <li>MegaMind</li>
                 <li>AverageMind</li>
                 <li>MiniMind</li>
                 <li>Fred</li>
             </ul>
-        </p>
     </section>
-    <hr />
+    <hr>
     <nav>
         <ul>
             <li><a href="#Last">Last Meeting Leftovers</a></li>
@@ -34,7 +32,6 @@
         <h2> Agenda </h2>
         <div id="Last">
         <h3> Last Meeting Leftovers: </h3>
-        <p>
             <ul>
                 <li>Who is stealing out of the fridge</li>
                     <li><ul>
@@ -43,17 +40,15 @@
                 <li>Vote on new MegaMind Logo</li>
                     <li><ul>
                         <li>Logo number 2 won, will be implemented by Fred.</li>
-                        <details>
+                        <li><details>
                             <summary>MM Logo</summary>
                             <img src="MMImage.jpg" alt="MegaMind Logo" height="100" width="100">
-                        </details>
+                        </details></li>
                     </ul></li>
             </ul>
-        </p>
         </div>
         <div id="New">
         <h3> New Business </h3>
-        <p>
             <ol>
                 <li>Discuss new lunch plan</li>
                     <li><ul>
@@ -68,17 +63,14 @@
                         <li>MegaMind will look into funding for a new naproom.</li>
                     </ul></li>
             </ol>
-        </p>
         </div>
         <div id="Comments">
         <h3> Questions/Comments </h3>
-        <p>
             <ul>
                 <li>MegaMind: <strong>Stop stealing my lunch</strong></li>
                 <li>MiniMind: Need help with <i>MegaMind Model</i></li>
                 <li>Fred: This is a paid internship, right?</li>
             </ul>
-        </p>
         </div>
         <div id="Recording">
         <h3> Meeting Recording </h3>
@@ -109,7 +101,7 @@
                     </select>
                 </div> <br>
                 <div>
-                    <label for="Vegetarian"> Vegetarian? </label> <br>
+                    <label> Vegetarian? </label> <br>
                     <input type="radio" name="Vegetarian" id="VegetarianYes">
                     <label for="VegetarianYes"> Yes </label> <br>
                     <input type="radio" name="Vegetarian" id="VegetarianNo">
@@ -121,12 +113,12 @@
                 </div> <br>
                 <div>
                     <label for="date"> Best date to go: </label> <br>
-                    <input type="date" name="date" id="date" /> <br>
+                    <input type="date" name="date" id="date"> <br>
                 </div> <br>
                 <div>
                     <label for="foodTypes"> Types of food: </label>
-                    <input list="foodTypes" name="foodTypes" id="foodTypes">
-                    <datalist>
+                    <input list="foodTypes" name="foodTypes">
+                    <datalist id="foodTypes">
                         <option value="Burgers"></option>
                         <option value="Tacos"></option>
                         <option value="Ramen"></option>
