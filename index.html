@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mega Meeting Minutes</title>
+    <link rel="icon" href="favicon.png" />
+    <meta name="description" content="MegaMind Meeting Minutes">  </head>
+  <body>
+    <header> 
+        <h1> MegaMind Meeting </h1>
+        <h2> Brainstorming </h2>
+        <p> 4-12-2024 </p>
+    </header>
+    <section>
+        <h4>Attendance:</h4>
+        <p>
+            <ul>
+                <li>MegaMind</li>
+                <li>AverageMind</li>
+                <li>MiniMind</li>
+                <li>Fred</li>
+            </ul>
+        </p>
+    </section>
+    <hr />
+    <nav>
+        <ul>
+            <li><a href="#Last">Last Meeting Leftovers</a></li>
+            <li><a href="#New">New Business </a></li>
+            <li><a href="#Comments">Questions/Comments</a></li>
+            <li><a href="#Recording"> Meeting Recording</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2> Agenda </h2>
+        <div id="Last">
+        <h3> Last Meeting Leftovers: </h3>
+        <p>
+            <ul>
+                <li>Who is stealing out of the fridge</li>
+                    <ul>
+                        <li>No one admits to the theft</li>
+                    </ul>
+                <li>Vote on new MegaMind Logo</li>
+                    <ul>
+                        <li>Logo number 2 won, will be implemented by Fred.</li>
+                        <details>
+                            <summary>MM Logo</summary>
+                            <img src="MMImage.jpg" alt="MegaMind Logo" height="100" width="100" />
+                        </details>
+                    </ul>
+            </ul>
+        </p>
+        </div>
+        <div id="New">
+        <h3> New Business </h3>
+        <p>
+            <ol>
+                <li>Discuss new lunch plan</li>
+                    <ul>
+                        <li>Everyone will submit a suggestion form by next meeting.</li>
+                    </ul>
+                <li>Deadline on MegaMind Plan is approaching</li>
+                    <ul>
+                        <li>Deadline will be close. <br> <b>An extension may be needed.</b></li>
+                    </ul>
+                <li>Naproom <em>needs</em> a remodel</li>
+                    <ul>
+                        <li>MegaMind will look into funding for a new naproom.</li>
+                    </ul>
+            </ol>
+        </p>
+        </div>
+        <div id="Comments">
+        <h3> Questions/Comments </h3>
+        <p>
+            <ul>
+                <li>MegaMind: <strong>Stop stealing my lunch</strong></li>
+                <li>MiniMind: Need help with <i>MegaMind Model</i></li>
+                <li>Fred: This is a paid internship, right?</li>
+            </ul>
+        </p>
+        </div>
+        <div id="Recording">
+        <h3> Meeting Recording </h3>
+        <video controls width="300">
+            <source src="MeetingVideo.mp4" type="video/mp4">
+        </video>
+        <br>
+        <audio controls src="MeetingAudio.mp4"></audio>
+        </div>
+    </main>
+
+    <section id="Lunch Form">
+        <fieldset>
+            <legend> Lunch Form </legend>
+            <form action="" method="">
+                <div>
+                    <label for="name"> Name: </label>
+                    <input type="text" name="name" id="name" /> <br>
+                </div> <br>
+                <div>
+                    <label for="department"> Department: </label>
+                    <select name="department" id="department">
+                        <option value=""> Choose your department </option>
+                        <option value="admin"> Admin </option>
+                        <option value="manufacturing"> Manufacturing </option>
+                        <option value="design"> Design </option>
+                        <option value="evilplans"> Evil Plans </option>
+                    </select>
+                </div> <br>
+                <div>
+                    <label for="Vegetarian"> Vegetarian? </label> <br>
+                    <input type="radio" name="Vegetarian" id="VegetarianYes" />
+                    <label for="VegetarianYes"> Yes </label> <br>
+                    <input type="radio" name="Vegetarian" id="VegetarianNo" />
+                    <label for="VegetarianNo"> No </label>
+                </div> <br>
+                <div>
+                    <label for="Checkbox"> Hungry? </label>
+                    <input type="checkbox" name="Checkbox" id="Checkbox" /> <br>
+                </div> <br>
+                <div>
+                    <label for="date"> Best date to go: </label> <br>
+                    <input type="date" name="date" id="date" /> <br>
+                </div> <br>
+                <div>
+                    <label for="foodTypes"> Types of food: </label>
+                    <input list="foodTypes" name="foodTypes" id="foodTypes" />
+                    <datalist id="foodTypes">
+                        <option value="Burgers"></option>
+                        <option value="Tacos"></option>
+                        <option value="Ramen"></option>
+                        <option value="BBQ"></option>
+                    </datalist>
+                </div> <br>
+                <div>
+                    <label> Suggested locations: </label> <br>
+                    <textarea></textarea> <br>
+                </div> <br>
+                <div>
+                    <button type="button"> Submit </button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+
+    <footer> <span>End of MegaMind Notes</span> </footer>
+  </body>
+</html>
