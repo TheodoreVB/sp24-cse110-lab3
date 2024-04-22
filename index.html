@@ -3,11 +3,21 @@
   <head>
     <title>Mega Meeting Minutes</title>
     <link rel="icon" href="favicon.png">
-    <meta name="description" content="MegaMind Meeting Minutes">  </head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <meta name="description" content="MegaMind Meeting Minutes">  
+    <style>
+    * {
+        background-color: black;
+    }
+    </style>
+    </head>
   <body>
     <header> 
-        <h1> MegaMind Meeting </h1>
-        <h2> Brainstorming </h2>
+        <h1 style="position: static;"> MegaMind Meeting </h1>
+        <h2 style="position: sticky;"> Brainstorming </h2>
         <p> 4-12-2024 </p>
     </header>
     <section>
@@ -20,7 +30,8 @@
             </ul>
     </section>
     <hr>
-    <nav>
+    <nav id="ToC">
+        <h3> Table of Contents: </h3>
         <ul>
             <li><a href="#Last">Last Meeting Leftovers</a></li>
             <li><a href="#New">New Business </a></li>
@@ -29,8 +40,9 @@
         </ul>
     </nav>
     <main>
-        <h2> Agenda </h2>
-        <div id="Last">
+        <h2 id="Agenda"> Agenda </h2>
+        <div class="grid">
+        <div class="List">
         <h3> Last Meeting Leftovers: </h3>
             <ul>
                 <li>Who is stealing out of the fridge</li>
@@ -47,7 +59,7 @@
                     </ul></li>
             </ul>
         </div>
-        <div id="New">
+        <div class="List">
         <h3> New Business </h3>
             <ol>
                 <li>Discuss new lunch plan</li>
@@ -72,6 +84,7 @@
                 <li>Fred: This is a paid internship, right?</li>
             </ul>
         </div>
+        </div>
         <div id="Recording">
         <h3> Meeting Recording </h3>
         <video controls width="300">
@@ -80,6 +93,7 @@
         <br>
         <audio controls src="MeetingAudio.mp4"></audio>
         </div>
+        <div id="hidden"> <p> A hidden message </p> </div>
     </main>
 
     <section id="LunchForm">
@@ -130,7 +144,7 @@
                     <textarea></textarea> <br>
                 </div> <br>
                 <div>
-                    <button type="button"> Submit </button>
+                    <button type="button" style="color: white;"> Submit </button>
                 </div>
             </form>
         </fieldset>

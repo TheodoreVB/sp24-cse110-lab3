@@ -1,0 +1,112 @@
+h1 {
+    font-family: "Orbitron", monospace;
+    color: #3E69C5;
+    text-decoration: aqua underline;
+}
+
+body {
+    color: rgb(255,255,255);
+}
+
+.List, #Comments {
+    min-width: 250px;
+    max-width: 500px;
+    /* Border */
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 0.2em;
+    border-color: pink;
+    /* Margins and Padding */
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+#Agenda {
+    max-width: 500px;
+    color: lightblue;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 0.3rem;
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+}
+
+#ToC {
+    max-width: 250px;
+    border: dashed lightskyblue;
+    margin: 5px 0px 5px 0px;
+    padding: 2px 0px 2px 0px;
+}
+
+#ToC > h3 {
+    text-align: center;
+}
+
+a:link {
+    color: hsl(from blue 240 100 50);
+}
+
+a:visited {
+    color: hsl(from purple 270 100 50);
+}
+
+a:hover { 
+    color: aqua;
+}
+
+#Recording {
+    border: solid white 5px;
+    width: auto;
+    margin: auto;
+}
+
+.List h3 {
+    color: color(srgb 0 0.5 1);
+}
+
+h3 + ul {
+    font-family: monospace;
+}
+
+h3 ~ ol{
+    font-family: Times;
+}
+
+h3:has(+ video) {
+    color: green;
+}
+
+h3 {
+    font-family: monospace;
+    & + ul {
+        color: color-mix(in srgb, lightblue, red);
+    }
+}
+
+button:active{
+    background-color: blue;
+}
+
+#VegetarianYes, #VegetarianNo {
+    display: inline-block;
+}
+
+#hidden {
+    display: none;
+}
+
+#LunchForm > *{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+@media (max-width: 40rem) {
+    h3 + ol {
+        color: red;
+    }
+}
